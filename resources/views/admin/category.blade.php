@@ -4,7 +4,6 @@
 
 @section('content')
 <h1>Category List</h1>
-
 <div class="mt-5 d-flex justify-content-end">
     <a href="category_add" class="btn btn-success"><i class="bi bi-plus-circle"></i> Add Category</a>
 </div>

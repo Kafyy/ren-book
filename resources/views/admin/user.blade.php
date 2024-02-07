@@ -17,11 +17,11 @@
     <table class="table">
         <thead>
             <tr>
-                <td>No.</td>
-                <td>Username</td>
-                <td>Phone</td>
-                <td>Address</td>
-                <td>Action</td>
+                <th>No.</th>
+                <th>Username</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>

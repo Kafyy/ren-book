@@ -21,6 +21,8 @@
     <input type="text" name="book_code" id="book_code" class="form-control w-50" placeholder="Book Code" value="{{$books->book_code}}">
     <label for="title" class="form-label">Title</label>
     <input type="text" name="title" id="title" class="form-control w-50" placeholder="Title" value="{{$books->title}}">
+    <label for="status" class="form-label">Status</label>
+    <input type="text" name="status" id="status" class="form-control w-50" placeholder="status" value="{{$books->status}}">
     <label for="image" class="form-label">Cover</label>
     <input type="file" name="image" id="image" class="form-control">
     <div class="mb-3">

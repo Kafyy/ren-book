@@ -47,13 +47,13 @@
     }
 
     .books{
-        background-color: #7FFFD4;
+        background-color: #40E0D0;
     }
     .category{
-        background-color: #FF9987;
+        background-color: #DE3163;
     }
     .user{
-        background-color: #FFB671;
+        background-color: #FF5733;
     }
 
     .card-data{
@@ -92,18 +92,19 @@
     <div class="row g-0 h-100">
         <div class="col-lg-2  sidebar collapse d-lg-block" id="navbarSupportedContent">
             @if(Auth::user()->rols_id == 1)
-            <a href="/dashboard" @if(request()->route()->uri == 'dashboard')class='active' @endif)><i class="bi bi-house-gear"></i> Dashboard</a>
-            <a href="/user" @if(request()->route()->uri == 'user')class='active' @endif)><i class="bi bi-person-circle"></i> User</a>
-            <a href="/category" @if(request()->route()->uri == 'category')class='active' @endif)><i class="bi bi-bookmarks"></i> Category</a>
-            <a href="/books" @if(request()->route()->uri == 'books')class='active' @endif)><i class="bi bi-book"></i> Books</a>
-            <a href="/rent_logs" @if(request()->route()->uri == 'rent_logs')class='active' @endif)><i class="bi bi-cart"></i> Rent Logs</a>
-            <a href="/logout" class="bi bi-box-arrow-left"> Logout</a>     
+            <a href="/dashboard" @if(request()->route()->uri == 'dashboard')class='active' @endif)><i class="bi bi-house-gear" style="color:#FFFFFF;"> Dashboard</i></a>
+            <a href="/user" @if(request()->route()->uri == 'user')class='active' @endif)><i class="bi bi-person-circle" style="color:#FFFFFF;"> User</i></a>
+            <a href="/category" @if(request()->route()->uri == 'category')class='active' @endif)><i class="bi bi-bookmarks" style="color:#FFFFFF;"> Category</i></a>
+            <a href="/books" @if(request()->route()->uri == 'books')class='active' @endif)><i class="bi bi-book" style="color:#FFFFFF;"> Books</i></a>
+            <a href="/rent_logs" @if(request()->route()->uri == 'rent_logs')class='active' @endif)><i class="bi bi-cart" style="color:#FFFFFF;"> Rent Logs</i></a>
+            <a href="/logout"> <i class="bi bi-box-arrow-left" style="color:#FFFFFF;"> Logout</i></a>     
             @else 
-            <a href="/profile" class="bi bi-person-circle"> Profile</a>
-            <a href="/logout" class="bi bi-box-arrow-left"> Logout</a>
+            <a href="/profile"  @if(request()->route()->uri == 'profile')class='active' @endif)><i class="bi bi-person-circle" style="color:#FFFFFF;"></i> Profile</a>
+            <a href="/book-user" @if(request()->route()->uri == 'book-user')class='active' @endif)><i class="bi bi-book" style="color:#FCFCFC;"></i> Books</a>
+            <a href="/logout"> <i class="bi bi-box-arrow-left" style="color:#FFFFFF;"> Logout</i></a>
             @endif
         </div>
-        <div class="col-lg-10 p-4 content">
+        <div class="col-lg-10 p-4 content" style="background-color:#FFFFFF;">
         @yield('content')
         </div>
     </div>

@@ -13,7 +13,7 @@
 </div>
 @endif
     <table class="table">
-        <thead class="table">
+        <thead>
             <tr>
                 <th>No</th>
                 <th>Book Code</th>

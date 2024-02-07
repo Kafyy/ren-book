@@ -5,7 +5,7 @@
 @section('content')
 <h1>List Registered User</h1>
 <div class="mt-4 d-flex justify-content-end">
-    <a href="/user" class="btn btn-warning me-3">Approve User List</a>
+    <a href="/user" class="btn btn-secondary">Back</a>
 </div>
 <div class="mt-4">
     <table class="table">
